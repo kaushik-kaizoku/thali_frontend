@@ -1,4 +1,3 @@
-import Image from "next/image";
 import RestaurantBooking  from "./_components/bookingform";
 
 export default function Home() {

@@ -25,7 +25,7 @@ const RestaurantBooking = () => {
       if (!response.ok) throw new Error('Failed to fetch time slots');
       const data = await response.json();
       setTimeSlots(data);
-    } catch (err) {
+    } catch (_) {
       setError('Error fetching available times. Please try again.');
     } finally {
       setLoading(false);
@@ -50,9 +50,9 @@ const RestaurantBooking = () => {
 
       if (!response.ok) throw new Error('Failed to make reservation');
       
-      const data = await response.json();
+      await response.json();
       setSuccess(true);
-    } catch (err) {
+    } catch (_) {
       setError('Error making reservation. Please try again.');
     } finally {
       setLoading(false);
