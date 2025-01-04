@@ -5,7 +5,7 @@ import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { Alert, AlertDescription } from '@/components/ui/alert';
 
-const API_BASE_URL = 'http://localhost:3000/api';
+const API_BASE_URL = 'https://thali-backend.onrender.com/api';
 
 const RestaurantBooking = () => {
   const [step, setStep] = useState(1);
