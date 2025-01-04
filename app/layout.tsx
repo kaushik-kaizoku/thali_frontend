@@ -27,6 +27,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <div className="bg-background flex items-center justify-center w-full pt-6 text-3xl ">
+        Welcome to Thali Restaurant
+        </div>
         {children}
       </body>
     </html>
